@@ -7,7 +7,7 @@ const todoPackage = grpcObject.todoPackage;
 const text = process.argv[2];
 console.log(text);
 
-const client = new todoPackage.Todo("localhost:4000", grpc.credentials.createInsecure())
+const client = new todoPackage.Todo("localhost:40000", grpc.credentials.createInsecure())
 
 client.createTodo({
     "id": -1,
